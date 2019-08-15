@@ -1,4 +1,4 @@
-# Concordia University's Gina Cody School of ENCS Thesis LaTeX Template
+# Concordia University's Gina Cody School of ENCS Thesis LaTeX Template + logos
 
 This is an updated LaTeX template for Master's and Ph.D. theses in the newly renamed Gina Cody School of Engineering and Computer Science.
 It builds on [Suo Tan's version](https://github.com/Tandysony/LaTeX-Thesis-Template-for-Concordia-University-Students), and brings the following:
@@ -8,6 +8,7 @@ It builds on [Suo Tan's version](https://github.com/Tandysony/LaTeX-Thesis-Templ
 - Fixed links in the Table of Contents to the List of Figures/Tables
 - Support for including thesis defence date or leaving it blank
 - Removes PTEX.Fullbanner from included resources (hides resource author/dates/potential full paths)
+- Vectorized Concordia and Gina Cody logos in Appendix, to be used e.g., in the thesis presentation
 
 ## Customize template
 - Under `%% THESIS SETTINGS`, fill your name, thesis title, then the name of the program you are enrolled in (e.g., Computer Science), and your department.
@@ -87,6 +88,7 @@ pdflatex mythesis.tex
 ```
 
 ## References
-https://www.concordia.ca/content/dam/sgs/docs/handbooks/thesispreparationguide.pdf
-https://github.com/Tandysony/LaTeX-Thesis-Template-for-Concordia-University-Students
-ssh://login.encs.concordia.ca/nfs/encs/Share/teTeX/cuthesis/*
+https://www.concordia.ca/content/dam/sgs/docs/handbooks/thesispreparationguide.pdf (official guidelines)
+https://github.com/Tandysony/LaTeX-Thesis-Template-for-Concordia-University-Students (Suo Tan's template)
+ssh://login.encs.concordia.ca/nfs/encs/Share/teTeX/cuthesis/* (original template)
+https://cspace.concordia.ca/content/dam/cspace/docs/concordia-brand-manual.pdf (logos)
