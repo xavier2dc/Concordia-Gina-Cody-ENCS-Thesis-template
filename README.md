@@ -6,7 +6,7 @@ It builds on [Suo Tan's version](https://github.com/Tandysony/LaTeX-Thesis-Templ
 - Correct list and order of examiners for Master's and Ph.D.
 - Some changes to support the CIISE department in the cover page
 - Fixed links in the Table of Contents to the List of Figures/Tables
-- Suppport for including thesis defence date or leaving it blank
+- Support for including thesis defence date or leaving it blank
 - Removes PTEX.Fullbanner from included resources (hides resource author/dates/potential full pathes)
 
 ## Customize template
