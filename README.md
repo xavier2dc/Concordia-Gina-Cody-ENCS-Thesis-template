@@ -7,6 +7,7 @@ It builds on [Suo Tan's version](https://github.com/Tandysony/LaTeX-Thesis-Templ
 - Some changes to support the CIISE department in the cover page
 - Fixed links in the Table of Contents to the List of Figures/Tables
 - Suppport for including thesis defence date or leaving it blank
+- Removes PTEX.Fullbanner from included resources (hides resource author/dates/potential full pathes)
 
 ## Customize template
 - Under `%% THESIS SETTINGS`, fill your name, thesis title, then the name of the program you are enrolled in (e.g., Computer Science), and your department.
