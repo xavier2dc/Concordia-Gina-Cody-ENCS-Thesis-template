@@ -39,7 +39,8 @@ Example of a Ph.D. thesis in the CIISE department with the names of the GPD/Dean
 \coSupervisor{Dr.\ Co-supervisor}
 
 %% Comment to use current month, needs to match initial submission
-\submitmonth{May 2019}
+\submitmonth{May}
+\submityear{2019}
 %% Comment if date of defence is unknown yet, fill for final submission
 \defencedate{July 1, 2019}
 ```
@@ -71,7 +72,8 @@ Example of a Ph.D. thesis in the Computer Science & Software Engineering departm
 \supervisor{Dr.\ Supervisor}
 
 %% Comment to use current month, needs to match initial submission
-\submitmonth{May 2019}
+\submitmonth{May}
+\submityear{2019}
 %% Comment if date of defence is unknown yet, fill for final submission
 \defencedate{July 1, 2019}
 ```

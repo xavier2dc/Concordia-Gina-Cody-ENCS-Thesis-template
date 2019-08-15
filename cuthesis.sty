@@ -59,6 +59,7 @@
 \def\mastersDegree#1{\gdef\@mastersDegree{#1}}
 \def\dept#1{\gdef\@dept{#1}}
 \def\submitmonth#1{\gdef\@submitmonth{#1}}
+\def\submityear#1{\gdef\@submityear{#1}}
 \def\defencedate#1{\gdef\@defencedate{#1}}
 \def\copyrightyear#1{\gdef\@copyrightyear{#1}} % \author, \title in report
 %
@@ -80,15 +81,10 @@
 \def\@examinerExternal{}
 \def\@submitmonth{\ifcase\the\month\or
   January\or February\or March\or April\or May\or June\or
-  July\or August\or September\or October\or November\or December\fi
-  \space \number\the\year}
+  July\or August\or September\or October\or November\or December\fi}
+\def\@submityear{\number\the\year}
 \def\@defencedate{\makebox[3cm]{\hrulefill}}
-\ifnum\month=12
-    \@tempcnta=\year \advance\@tempcnta by 1
-    \edef\@copyrightyear{\number\the\@tempcnta}
-\else
-    \def\@copyrightyear{\number\the\year}
-\fi
+\def\@copyrightyear{\@submityear}
 \newif\ifcopyright \newif\iffigurespage \newif\iftablespage
 \copyrighttrue \figurespagetrue \tablespagetrue
 
@@ -138,7 +134,7 @@
         \end{center}
         \vfill
         \begin{center}
-                \@submitmonth\\~\\
+                \@submitmonth\space\@submityear\\~\\
                 \copyright \ {\@author}, \@copyrightyear
         \end{center}\vskip.5in\newpage}
 
