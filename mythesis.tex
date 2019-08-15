@@ -1,0 +1,178 @@
+\RequirePackage[hyphens]{url}  % force break URL in ACM template
+\documentclass[letterpaper,12pt,onecolumn,final]{report}
+
+\pdftrailerid{}
+\pdfsuppressptexinfo15
+\pdfminorversion=4
+
+%% MANDATORY PACKAGES
+\usepackage{cuthesis}         % Concordia's thesis style
+\usepackage[english]{babel}   % load english localization
+\usepackage{type1ec}          % type 1 font
+\usepackage[T1]{fontenc}      % correct some font representation, needs cm-super fonts
+\usepackage{times}            % use Times New Roman font
+\usepackage[titletoc,title]{appendix}     % include Appendix command, add to ToC
+\usepackage{setspace}         % control double/single line spacing
+
+%% OPTIONAL PACKAGES
+%\counterwithout{footnote}{chapter}        % do no reset footnote # between chapters
+\usepackage[hyphens]{url}     % print links
+\usepackage{hyperref}         % provides hyperlinks (text different than link)
+%\usepackage[hyphenbreaks]{breakurl}       % break long URL after hyphens
+\hypersetup{
+	colorlinks=true,
+	breaklinks=true,
+	linkcolor=black,
+	citecolor=black,
+	urlcolor=black,
+	filecolor=black,
+	linktoc=all,
+}
+\usepackage{graphicx}
+%\graphicspath{{img/}}
+
+\usepackage{blindtext}
+
+%% CUSTOM MACROS
+%\newcommand{\tickyes}{{\small\checkmark}}
+%\newcommand{\tickno}{{\small$\times$}}
+
+%% CUSTOM COMMANDS
+%\newcommand{\subhead}[1]{\noindent{\textbf{#1.}}}
+
+%% THESIS SETTINGS
+\author{John Doe}
+\title{My Super Thesis}
+
+% As of 2019, title is no longer used...
+%\titleOfPhDAuthor{Mr.}         % or Ms., Mrs., Miss, etc. (only for PhD's)
+
+% if PhD, uncomment:
+\PhD
+% else if Master's, uncomment:
+%\mastersDegree{Master of Applied Science}
+
+\program{Information and Systems Engineering}
+%\program{Computer Science}
+\dept{The Concordia Institute\\for\\Information Systems Engineering}
+%\dept{The Department\\of\\Computer Science and Software Engineering}
+
+%% See current GPD at https://www.concordia.ca/admissions/graduate/programs/contacts.html
+\GpdOrChairOfDept{Dr.\ GPD}
+\isGpd % Chair by default
+%% See current Dean at  https://www.concordia.ca/ginacody/about/leadership/office-dean/dean-of-engineering-and-computer-science.html
+\deanOfENCS{Dr.\ Amir Asif} 
+\chairOfCommittee{Dr.\ Chair}
+\examinerExternal{Dr.\ External}
+\examinerFirst{Dr.\ Examiner1}
+\examinerSecond{Dr.\ Examiner2}
+\examinerExternalToProgram{Dr.\ ExternalToProgram}
+\supervisor{Dr.\ Supervisor}
+%% Following two lines are required if you have a co-supervisor
+%\hasCosupervisor
+%\coSupervisor{Dr.\ Co-supervisor}
+
+%% Comment to use current month, needs to match initial submission
+\submitmonth{May 2019}
+%% Comment if date of defence is unknown yet, fill for final submission
+\defencedate{July 1, 2019}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\doublespacing
+\begin{document}
+
+\begin{abstract}
+{%trick to force double spacing in the abstract, otherwise some paragraphs may show single spaced
+\setstretch{1.6667}
+\blindtext[1]
+
+\blindtext[1]
+
+\blindtext[1]
+
+\blindtext[1]
+}
+\end{abstract}
+
+%\doublespacing
+\begin{acknowledgments}
+	% keep this section even if empty
+	\blindtext[2]
+\end{acknowledgments}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}
+% suggestion of intro
+
+Hello~\cite{cold-boot-attack}.
+
+\section{Motivation}
+\blindtext[5]
+
+\section{Thesis Statement}
+\blindtext[2]
+
+\section{Objectives and Contributions}
+\blindtext[3]
+
+\section{Related Publications}
+\blindtext[1]
+
+\section{Outline}
+The rest of the thesis is organized as follows...
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Background}
+\label{chap:background}
+\blindtext[10]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Then}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Conclusion and future work}
+\label{chap:conclusion}
+
+\blindtext[5]
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}  %  Add Bibliography to TOC
+\singlespacing % save space in the bibliography
+\bibliographystyle{abbrv}
+\bibliography{references}
+
+
+
+%%%%%%%%%% Appendices %%%%%%%%%%%%%%%%
+% ---- Appendix settings. Please Do NOT change them. -----
+\appendix
+\setcounter{table}{0}		% reset the table counter
+\setcounter{figure}{0}		% reset the figure counter
+\renewcommand{\thefigure}{\Alph{chapter}.\arabic{figure}} 	% numbering the a figure in Appendix as Figure A.2, Figure B.1, etc.
+\renewcommand{\thetable}{\Alph{chapter}.\arabic{table}}		% numbering the a table in Appendix as Table A.2, Table B.1, etc.
+
+%%%%%%%%%% Body of Appendix %%%%%%%%%%%%%%%%
+\begin{appendices}
+\doublespacing
+
+\chapter{First Appendix}
+\label{chap:apdx1}
+
+\blindmathpaper
+
+
+\end{appendices}
+
+\end{document}
