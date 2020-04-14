@@ -53,7 +53,7 @@ and comment it.
 
 
 ### Example 2: MApCompSc thesis in the Computer Science & Software Engineering department
-Example of a Ph.D. thesis in the Computer Science & Software Engineering department with the names of the GPD/Dean as of 2019.
+Example of a MApCompSc thesis in the Computer Science & Software Engineering department with the names of the GPD/Dean as of 2019.
 ```
 %% THESIS SETTINGS
 \author{John Doe}
